@@ -1,0 +1,17 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: parking-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: public
+        group: DEFAULT_GROUP
+      config:
+        server-addr: localhost:8848
+        namespace: public
+        group: DEFAULT_GROUP
+        file-extension: yml

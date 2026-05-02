@@ -1,0 +1,71 @@
+# IDE
+.idea/
+*.iml
+.vscode/
+*.iws
+*.ipr
+.DS_Store
+
+# 敏感配置 - 本地环境覆盖（不提交）
+application-local*.yml
+application-local*.yaml
+application-dev*.yml
+application-dev*.yaml
+application-prod*.yml
+application-prod*.yaml
+*.local.yml
+*.local.yaml
+*.dev.yml
+*.dev.yaml
+*.prod.yml
+*.prod.yaml
+
+# 环境变量文件
+.env
+.env.*
+.env.local
+
+# 构建产物
+target/
+build/
+*.class
+*.jar
+*.war
+
+# 日志和临时文件
+*.log
+logs/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Nacos 本地数据（包含配置的本地缓存）
+data/
+nacos/data/
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot打包的jar（用于部署，不提交）
+*.jar.original
+
+# 编译时的中间文件
+*/target/generated-sources/
+*/target/generated-test-sources/
+
+# MyBatis Mapper 缓存
+*_mapper.xml
+
+# Node.js（如果项目有前端）
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+Dockerfile
+docker-compose.yml
+.docker/
+
+# K8s
+*.kubeconfig
